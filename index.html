@@ -56,7 +56,7 @@
             const tiempoFinal = Date.now();
             const tiempoTotal = tiempoFinal - tiempoInicio;
             document.getElementById("resultado").textContent =
-              `✅ Juego terminado. Tiempo: ${tiempoTotal}ms. Intentos: ${intentos}`;
+              `✅ Juego terminado.`;
 
             window.parent.postMessage({
               tiempo2: tiempoTotal,

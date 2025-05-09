@@ -54,7 +54,8 @@
           seleccionadas = [];
           if (emparejadas === 6) {
             const tiempoFinal = Date.now();
-            const tiempoTotal = tiempoFinal - tiempoInicio;
+const tiempoTotalMs = tiempoFinal - tiempoInicio;
+const tiempoFormateado = (tiempoTotalMs / 1000).toFixed(3);
             document.getElementById("resultado").textContent =
               `✅ Juego terminado.`;
 
